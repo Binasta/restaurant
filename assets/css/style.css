@@ -147,15 +147,6 @@ footer {
   color: #141e2a ;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fffaf0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
 
 .form-container {
     background: white;
