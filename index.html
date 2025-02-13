@@ -71,31 +71,62 @@
         </section>
     </main>
 
-    <div class="rendered-form">
-        <div class="formbuilder-text form-group field-text-1739466484169">
-            <label for="text-1739466484169" class="formbuilder-text-label">Nom<span class="formbuilder-required">*</span></label>
-            <input type="text" class="form-control" name="text-1739466484169" access="false" id="text-1739466484169" required="required" aria-required="true">
-        </div>
-        <div class="formbuilder-number form-group field-number-1739466515381">
-            <label for="number-1739466515381" class="formbuilder-number-label">Numéro de téléphone<span class="formbuilder-required">*</span></label>
-            <input type="number" class="form-control" name="number-1739466515381" access="false" id="number-1739466515381" required="required" aria-required="true">
-        </div>
-        <div class="formbuilder-text form-group field-text-1739466639857">
-            <label for="text-1739466639857" class="formbuilder-text-label">Email<span class="formbuilder-required">*</span></label>
-            <input type="text" class="form-control" name="text-1739466639857" access="false" id="text-1739466639857" required="required" aria-required="true">
-        </div>
-        <div class="formbuilder-date form-group field-date-1739466477094">
-            <label for="date-1739466477094" class="formbuilder-date-label">Date<span class="formbuilder-required">*</span></label>
-            <input type="date" class="form-control" name="date-1739466477094" access="false" id="date-1739466477094" required="required" aria-required="true">
-        </div>
-        <div class="formbuilder-number form-group field-number-1739466531788">
-            <label for="number-1739466531788" class="formbuilder-number-label">Nombres de couverts</label>
-            <input type="number" class="form-control" name="number-1739466531788" access="false" id="number-1739466531788">
-        </div>
-        <div class="formbuilder-button form-group field-button-1739466597449">
-            <button type="submit" class="btn-default btn" name="button-1739466597449" access="false" style="default" id="button-1739466597449">Envoyer</button>
-        </div>
+    <div class="form-container">
+        <h2>Réservation</h2>
+        <form id="reservation-form">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tel">Numéro de téléphone :</label>
+                <input type="tel" id="tel" name="tel" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date :</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="couverts">Nombre de couverts :</label>
+                <select id="couverts" name="couverts" required>
+                    <option value="1">1 personne</option>
+                    <option value="2">2 personnes</option>
+                    <option value="3">3 personnes</option>
+                    <option value="4">4 personnes</option>
+                    <option value="5">5 personnes</option>
+                    <option value="6">6 personnes</option>
+                    <option value="7">7 personnes</option>
+                    <option value="8">8 personnes</option>
+                </select>
+            </div>
+
+            <button type="submit">Réserver</button>
+            <p class="success-message">Votre réservation a bien été prise en compte !</p>
+        </form>
     </div>
+
+    <script>
+        document.getElementById("reservation-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Empêche l'envoi réel du formulaire
+
+            // Afficher un message de succès
+            document.querySelector(".success-message").style.display = "block";
+
+            // Réinitialiser le formulaire après 2 secondes
+            setTimeout(() => {
+                document.getElementById("reservation-form").reset();
+                document.querySelector(".success-message").style.display = "none";
+            }, 2000);
+        });
+    </script>
 
     <footer class="footer">
         <section class="foot">
