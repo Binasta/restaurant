@@ -17,22 +17,22 @@
     <header class="header">
         <div class="tabs">
             <input type="radio" id="html" name="tabs" checked>
-            <label class="tab" for="html">Le restaurant</label>
-
+            <label class="tab" for="html" onclick="document.getElementById('acceuil').scrollIntoView()">Le restaurant</label>
+            
             <input type="radio" id="css" name="tabs">
-            <label class="tab" for="css">Menu</label>
-
+            <label class="tab" for="css" onclick="document.getElementById('menu').scrollIntoView()">Menu</label>
+            
             <input type="radio" id="javascript" name="tabs">
             <label class="tab" for="javascript">Reserver</label>
-
+            
             <input type="radio" id="react" name="tabs">
             <label class="tab" for="react">A propos</label>
             
             <span class="slider"></span>
-          </div>
+        </div>
     </header>
 
-    <section class="title">
+    <section class="title"  id="acceuil">
         <h1 clas="m-0">Notre Restaurant</h1>
     </section>
 
@@ -52,10 +52,32 @@
     </main>
 
 
+    <section class="title"  id="menu">
+        <h1 clas="m-0">Notre Carte </h1>
+    </section>
+
+    <main>
+        <section class="container" > 
+            <div class="container-fluid">
+                <div class="row align-items-center text-center">
+                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                        <img src="assets/img/Saumon d’Ecosse mi cuit.png" class="rounded-5 img-fluid w-75" alt="Image 1">
+                    </div>  
+                    <div class="col-12 col-md-6 d-flex justify-content-center">
+                        <img src="assets/img/Saumon d’Ecosse mi cuit(1).png" class="img-fluid w-75" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+
     <footer class="footer">
         <section class="foot">
                 &copy;RestaurantLeColibri
         </section>
     </footer>
 </body>
+
 </html>
