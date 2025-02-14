@@ -214,6 +214,14 @@ button:hover {
     font-weight: bold;
 }
 
+.bodysocials {
+  height: 100vh;
+  background-color: hsl(214, 20%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .wrapper {
   display: flex;
