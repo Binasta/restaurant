@@ -126,8 +126,10 @@ main {
 .container {
   display: flex;
   background-color: #fffaf0;
-  margin-bottom: 300px;
 
+}
+.marb{
+  margin-bottom: 300px;
 }
 .content {
   font: 1em sans-serif;
@@ -242,7 +244,7 @@ button:hover {
 }
 
 .icon > i {
-  color: #fff;
+  color: #f5aa79;
   font-size: 1.5rem;
   transition: all 0.2s;
 }
