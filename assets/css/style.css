@@ -131,6 +131,10 @@ main {
 .marb{
   margin-bottom: 300px;
 }
+
+.marb2{
+  margin-bottom: 100px;
+}
 .content {
   font: 1em sans-serif;
 }
