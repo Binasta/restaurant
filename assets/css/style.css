@@ -222,7 +222,7 @@ button:hover {
 
 .bodysocials {
   height: 100vh;
-  background-color: #fffaf0;
+  background-color: #141e2a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,7 +267,7 @@ button:hover {
   position: absolute;
   inset: 0;
   border-radius: 100%;
-  background: linear-gradient(220.55deg, #565656 0%, #181818 100%);
+  background: #141e2a;
   /* background: linear-gradient(220.55deg, #a531dc 0%, #4300b1 100%); */
   scale: 1;
   z-index: -1;
